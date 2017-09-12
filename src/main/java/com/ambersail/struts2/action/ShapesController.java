@@ -31,6 +31,14 @@ public class ShapesController extends ActionSupport implements ModelDriven<Shape
         return new DefaultHttpHeaders("show");
     }
 
+    public HttpHeaders create() {
+     
+        addActionMessage("New shape created successfully");
+        return new DefaultHttpHeaders("success")
+            .setLocationId(1);
+    }
+
+
     // GET /shapes
     public HttpHeaders index() {
   
@@ -39,6 +47,12 @@ public class ShapesController extends ActionSupport implements ModelDriven<Shape
 
         return new DefaultHttpHeaders("index")
             .disableCaching();
+    }
+
+    // Handles /orders/{id} PUT requests
+    public String update() {
+        
+        return "update";
     }
 
 	public Shape getModel() {
