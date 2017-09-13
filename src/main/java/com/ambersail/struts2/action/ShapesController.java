@@ -12,7 +12,9 @@ import org.apache.struts2.rest.HttpHeaders;
 @Results({
     @Result(name="success", type="redirectAction", params = {"actionName" , "shapes"})
 })
-// Placeholder controller using struts convention & REST plugins to define endpoints
+/* Placeholder controller using struts convention & REST plugins to define endpoints.
+A real application would have a much more complete implementation.
+*/
 public class ShapesController implements ModelDriven<Shape> {
 
     private Shape model;
