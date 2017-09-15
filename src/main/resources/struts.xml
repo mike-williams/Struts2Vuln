@@ -8,4 +8,5 @@
     <constant name="struts.convention.package.locators" value="action"/>
     <constant name="struts.convention.exclude.parentClassLoader" value="false" />
     <constant name="struts.convention.action.fileProtocols" value="jar,code-source" />
+    
 </struts>
